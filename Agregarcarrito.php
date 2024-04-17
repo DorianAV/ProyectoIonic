@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == 'OPTIONS') {
 $id_producto = $json->id_producto;
 $cantidad = 1;
 
-$con = mysqli_connect("localhost", "id21621412_root", "Osva123$","id21621412_proyecto");
+$con=mysqli_connect("localhost", "root", "2004","servicios");
 
 if (!$con) {
     echo "Error: " . mysqli_connect_error();

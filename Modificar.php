@@ -13,7 +13,7 @@ $Precio =$json->Precio;
 
 $sensql = "update articulos set Nombre='$Nombre', Descripcion='$Descripcion', Precio='$Precio',Existencias='$Existencias',  codigo_barras='$codigo_barras'  where Id=$Id";
 echo $sensql;
-$con =  mysqli_connect("localhost", "id22052584_osva", "Osva123$","id22052584_proyectoosva");
+$con=mysqli_connect("localhost", "root", "2004","servicios");
 $res = mysqli_query($con, $sensql);
 mysqli_close($con);
 echo json_encode($res);

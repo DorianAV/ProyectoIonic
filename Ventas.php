@@ -1,6 +1,6 @@
 <?php
 header("Access-Control-Allow-Origin: *");
-$conexion = mysqli_connect("localhost", "id21621412_root", "Osva123$","id21621412_proyecto");
+$conexion=mysqli_connect("localhost", "root", "2004","servicios");
 $sen = "select * from Venta ";
 $lista=array();
 $dato = mysqli_query($conexion, $sen);

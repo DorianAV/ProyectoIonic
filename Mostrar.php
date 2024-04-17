@@ -1,6 +1,6 @@
 <?php
 header("Access-Control-Allow-Origin: *");
-$conexion = mysqli_connect("localhost", "id22052584_osva", "Osva123$","id22052584_proyectoosva");
+$conexion = mysqli_connect("localhost", "root", "2004", "servicios");
 $sen = "select * from articulos";
 $lista=array();
 $dato = mysqli_query($conexion, $sen);

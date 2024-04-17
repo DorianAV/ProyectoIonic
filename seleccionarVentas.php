@@ -2,7 +2,7 @@
 header("Access-Control-Allow-Origin: *");
 $Id = $_GET['Id'];
 
-$conexion = mysqli_connect("localhost", "id21621412_root", "Osva123$","id21621412_proyecto"); 
+$conexion=mysqli_connect("localhost", "root", "2004","servicios");
 if (!$conexion) {
     die("Conexión fallida: " . mysqli_connect_error());
 }

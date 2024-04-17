@@ -9,7 +9,7 @@ if ($_SERVER["REQUEST_METHOD"] == 'OPTIONS') {
     exit();
 }
 $Total = $json->Total;
-$con = mysqli_connect("localhost", "id21621412_root", "Osva123$","id21621412_proyecto");
+$con=mysqli_connect("localhost", "root", "2004","servicios");
 $sql = "INSERT INTO Venta(Fecha, Total) VALUES ( NOW(), $Total)";
 mysqli_close($con);
 ?>

@@ -14,7 +14,7 @@ $res = [
     'mensaje' => 'Venta realizada correctamente',
     'datos' => []
 ];
-$con = mysqli_connect("sql213.infinityfree.com", "if0_36377064", "6NX2ofaogNdte","if0_36377064_apirestosva");
+$con=mysqli_connect("localhost", "root", "2004","servicios");
 $sql = "INSERT INTO Venta(Fecha,Total) VALUES (NOW(), $Total)";
 if (mysqli_query($con, $sql)) {
     $res['datos'] = ['Total' => $Total];

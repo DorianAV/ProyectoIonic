@@ -2,7 +2,7 @@
 header("Access-Control-Allow-Origin: *");
 header("Access-Control-Allow-Headers: *");
 
-$con = mysqli_connect("sql213.infinityfree.com", "if0_36377064", "6NX2ofaogNdte","if0_36377064_apirestosva");
+$con=mysqli_connect("localhost", "root", "2004","servicios");
 
 if (!$con) {
     echo "Error: " . mysqli_connect_error();

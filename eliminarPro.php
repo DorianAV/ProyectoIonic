@@ -6,7 +6,7 @@ $Id = $_GET["Id"];
 
 $sensql = "delete from carrito  where Id_producto=$Id";
 
-$con = mysqli_connect("localhost", "id21621412_root", "Osva123$","id21621412_proyecto");
+$con=mysqli_connect("localhost", "root", "2004","servicios");
 
 $res = mysqli_query($con, $sensql);
 

@@ -6,7 +6,7 @@ $Id = $_GET["Id"];
 
 $sensql = "delete from articulos where Id=$Id";
 
-$con =  mysqli_connect("localhost", "id22052584_osva", "Osva123$","id22052584_proyectoosva");
+$con=mysqli_connect("localhost", "root", "2004","servicios");
 
 $res = mysqli_query($con, $sensql);
 

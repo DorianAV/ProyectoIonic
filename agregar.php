@@ -15,7 +15,7 @@ $Existencias =$json->Existencias;
 $codigo_barras=$json->codigo_barras;
 $sensql = "insert into articulos (Nombre, Descripcion,  Precio, Existencias,codigo_barras) values('$Nombre','$Descripcion', '$Precio', '$Existencias', '$codigo_barras')";
 echo $sensql;
-$con =  mysqli_connect("localhost", "id22052584_osva", "Osva123$","id22052584_proyectoosva");
+$con=mysqli_connect("localhost", "root", "2004","servicios");
 $res = mysqli_query($con, $sensql);
 mysqli_close($con);
 echo json_encode($res);
